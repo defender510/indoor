@@ -266,7 +266,7 @@
   function checkPassword() {
     const password = document.getElementById("password").value;
 
-    fetch("https://test510.ct.ws/auth.php", {
+    fetch("http://test510.ct.ws/auth.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ password: password }),
