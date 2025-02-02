@@ -440,5 +440,11 @@
   });
 </script>
 
+<script>
+  if (localStorage.getItem("authenticated") !== "true") {
+    window.location.href = "login.html"; // Redirect if not logged in
+  }
+</script>
+
     </body>
 </html>
